@@ -4,12 +4,12 @@ public interface Comparer {
 class WidthComparer implements Comparer{
 	
 	public boolean comp(Figure one,Figure two) {
-		return one.getwidth() > two.getwidth();
+		return one.getwidth() < two.getwidth();
 	}
 
 }
 class AreaComparer implements Comparer{
 	public boolean comp(Figure one,Figure two) {
-		return one.getarea() > two.getarea();
+		return one.getarea() < two.getarea();
 	}
 }
